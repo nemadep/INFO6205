@@ -52,10 +52,10 @@ public class TestInsertionSort {
 
 	public Integer[] getReverseSortedArray(int size) {
 		Integer[] xs = new Integer[size];
-		int i = size - 1;
-		while (i >= 0) {
-			xs[i] = i;
-			i--;
+		int i = 0;
+		while (i < size) {
+			xs[i] = size - i;
+			i++;
 		}
 		return xs;
 	}
